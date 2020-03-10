@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>getter for a property called fullName</p>
+<p id="demo"></p>
+<script type="text/javascript">
+	var person = {
+		firstName: "John",
+		lastName: "Doe",
+		get fullName() {
+			return this.firstName + " " + this.lastName;
+		}
+	};
+document.getElementById('demo').innerHTML = person.fullName;
+</script>
+</body>
+</html>
