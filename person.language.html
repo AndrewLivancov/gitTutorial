@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>This example has a modified setter to secure upper case uppdates of language.</p>
+<p id="demo"></p>
+<script>
+	var person = {
+		firstName: "John",
+		lastName: "Doe",
+		language: "",
+		set lang(value) {
+			this.language = value.toUpperCase();
+		}
+	};
+	person.lang = "en";
+document.getElementById('demo').innerHTML = person.language;
+</script>
+</body>
+</html>
